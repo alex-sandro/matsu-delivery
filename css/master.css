@@ -3,13 +3,30 @@ body{
     background-color: #000000;
     color: #ffffff;
     line-height: 150%;
+    margin: 0;
+    padding: 0;
 }
 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin-top: 20px;
+    justify-content: space-between;
+    width: auto;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+    padding: 2%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
 }
 .imagens{
     display: flex;
@@ -24,7 +41,7 @@ header{
 .container-overlay {
     position: relative;
     width: 50%;
-    max-width: 300px;
+    width: 300px;
 }
 
 .banner {
@@ -57,5 +74,12 @@ footer{
     text-align: center;
 }
 
-
-
+@media (max-width: 950px) {
+    .imagens {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width:100%;
+        margin: 0 2%;
+    }
+}
